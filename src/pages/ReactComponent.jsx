@@ -1,3 +1,3 @@
 export default function ReactComponent() {
-  return "React";
+  return "React Component";
 }
