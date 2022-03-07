@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Layout from "./pages/Layout";
+import ReactComponent from "./pages/ReactComponent";
+import UxDesign from "./pages/Uxdesign";
+import Webflow from "./pages/Webflow";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>{<Webflow />}</h1>
+      <h1>{<ReactComponent />}</h1>
+      <h1>{<UxDesign />}</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="/ux-desing" element={<UxDesign />} />
+            <Route path="/webflow" element={<Webflow />} />
+            <Route path="/react" element={<ReactComponent />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
-
-export default App;
