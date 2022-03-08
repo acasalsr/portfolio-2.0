@@ -2,14 +2,22 @@ import React from "react";
 import "../App.css";
 import { jobDescription } from "../infoContetn/jobs";
 export default function HomePage() {
-  const Job = ({ job }) => {
-    console.log("JOB :: ", job);
+  // -> Function job title & keywords<-
+  function Job({ job }) {
+    /*
+    const titleLength = job.title.splite(" ");
+    if (titleLength !== 0) {
+      //Crear un .map de titleLength per imprimir titleLength[0], titleLength[1],etc
+      <h2>titleLength[]</h2>;
+    }
+    */
     return (
       <>
-        <h1>{job.title}</h1> <p>{job.keyword}</p>
+        <h2 class="header-secondary text-shadow">{job.title}</h2>;
+        <h3 class="text-color-yellow move-left">{job.keyword}</h3>
       </>
     );
-  };
+  }
 
   return (
     <>
@@ -65,9 +73,9 @@ export default function HomePage() {
       </header>
       <section className="section-ux padding-top padding-xxhuge">
         <div className="container-medium padding-horizontal padding-large">
-          <Job job={jobDescription[0].content} />
-          <Job job={jobDescription[1].content} />
-          <Job job={jobDescription[2].content} />
+          <div class="flex-right">
+            <Job job={jobDescription[0].content} />
+          </div>
         </div>
       </section>
     </>
