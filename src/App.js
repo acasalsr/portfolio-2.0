@@ -5,7 +5,7 @@ import UxDesign from "./pages/UxDesign";
 import Webflow from "./pages/Webflow";
 import Contact from "./pages/Contact";
 import HomePage from "./pages/HomePage";
-import Layout from "./pages/Layout";
+import Layout from "./components/MainMenu";
 
 export default function App() {
   return (

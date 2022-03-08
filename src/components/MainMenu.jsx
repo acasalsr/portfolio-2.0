@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Layout() {
+export default function MainMenu() {
   return (
     <div className="container-medium padding-horizontal padding-medium">
       <nav className="main-menu padding-horizontal padding-medium">
