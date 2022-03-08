@@ -1,5 +1,16 @@
+import React from "react";
 import "../App.css";
+import { jobDescription } from "../infoContetn/jobs";
 export default function HomePage() {
+  const Job = ({ job }) => {
+    console.log("JOB :: ", job);
+    return (
+      <>
+        <h1>{job.title}</h1> <p>{job.keyword}</p>
+      </>
+    );
+  };
+
   return (
     <>
       <header className="section-header padding-top padding-huge">
@@ -52,6 +63,13 @@ export default function HomePage() {
           />
         </div>
       </header>
+      <section className="section-ux padding-top padding-xxhuge">
+        <div className="container-medium padding-horizontal padding-large">
+          <Job job={jobDescription[0].content} />
+          <Job job={jobDescription[1].content} />
+          <Job job={jobDescription[2].content} />
+        </div>
+      </section>
     </>
   );
 }
