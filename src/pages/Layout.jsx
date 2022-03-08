@@ -4,22 +4,42 @@ export default function Layout() {
   return (
     <div className="container-medium padding-horizontal padding-medium">
       <nav className="main-menu padding-horizontal padding-medium">
-        <ul>
-          <li className="div-link">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="div-link">
-            <Link to="/ux-design">UX Design</Link>
-          </li>
-          <li className="div-link">
-            <Link to="/webflow">Webflow</Link>
-          </li>
-          <li className="div-link">
-            <Link to="/react">React</Link>
-          </li>
-        </ul>
+        <li>
+          <div>
+            <Link className="div-link" to="/">
+              Home
+            </Link>
+          </div>
+        </li>
+        <li>
+          <div>
+            <Link className="div-link" to="/ux-design">
+              UX Design
+            </Link>
+          </div>
+        </li>
+        <li>
+          <div>
+            <Link className="div-link" to="/webflow">
+              Webflow
+            </Link>
+          </div>
+        </li>
+        <li>
+          <div>
+            <Link className="div-link" to="/react">
+              React
+            </Link>
+          </div>
+        </li>
+        <li>
+          <div>
+            <Link className="div-link" id="custom-buttom" to="/contact">
+              Contact me
+            </Link>
+          </div>
+        </li>
       </nav>
-
       <Outlet />
     </div>
   );
