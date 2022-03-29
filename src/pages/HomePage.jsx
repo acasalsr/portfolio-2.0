@@ -2,7 +2,6 @@ import React from "react";
 import "../App.css";
 import { JobTitleAndDescription } from "../infoContetn/jobTitleAndDescription";
 export default function HomePage() {
-  
   // -> Function job title & keywords<-
   function Job({ job }) {
     const spliteTitle = job.title?.split(" ");
@@ -78,9 +77,7 @@ export default function HomePage() {
           />
         </div>
       </header>
-      <section className="section-ux padding-top padding-xxhuge">
-        {JobTitleAndDescription(Job)}
-      </section>
+      {JobTitleAndDescription(Job)}
     </>
   );
 }
