@@ -1,20 +1,27 @@
 import React from "react";
 import "../App.css";
-import { jobDescription } from "../infoContetn/jobs";
+import { JobTitleAndDescription } from "../infoContetn/jobTitleAndDescription";
 export default function HomePage() {
+  
   // -> Function job title & keywords<-
   function Job({ job }) {
-    /*
-    const titleLength = job.title.splite(" ");
-    if (titleLength !== 0) {
-      //Crear un .map de titleLength per imprimir titleLength[0], titleLength[1],etc
-      <h2>titleLength[]</h2>;
-    }
-    */
+    const spliteTitle = job.title?.split(" ");
     return (
       <>
-        <h2 class="header-secondary text-shadow">{job.title}</h2>;
-        <h3 class="text-color-yellow move-left">{job.keyword}</h3>
+        {spliteTitle.map((singleTitleName) => (
+          <h2 class="header-secondary text-shadow">{singleTitleName}</h2>
+        ))}
+        {job.keywords.map((singleKeywords, index) => {
+          const [num, text] = singleKeywords.split(".");
+          return (
+            <h3
+              class="text-color-yellow move-left"
+              style={{ marginRight: `${(index * 10) % 15}0px` }}
+            >
+              <span className="text-color-blue">{num}.</span> {text}
+            </h3>
+          );
+        })}
       </>
     );
   }
@@ -72,11 +79,7 @@ export default function HomePage() {
         </div>
       </header>
       <section className="section-ux padding-top padding-xxhuge">
-        <div className="container-medium padding-horizontal padding-large">
-          <div class="flex-right">
-            <Job job={jobDescription[0].content} />
-          </div>
-        </div>
+        {JobTitleAndDescription(Job)}
       </section>
     </>
   );
