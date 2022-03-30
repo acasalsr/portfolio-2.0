@@ -67,14 +67,14 @@ export default function HomePage() {
         <div>
           <img
             className="profile-background-photo"
-            src="./img/foto-perfil-2.jpg"
+            src={process.env.PUBLIC_URL + "/img/foto-perfil-2.jpg"}
             alt="profile"
           />
         </div>
         <div>
           <img
             className="absolut-profile-image-backgroud background-image-header"
-            src="./img/background-header.svg"
+            src={process.env.PUBLIC_URL + "/img/background-header.svg"}
             alt="background img"
           />
         </div>

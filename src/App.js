@@ -11,15 +11,15 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio-2.0">
         <div id="wrapper-overflow">
           <Layout />
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/ux-design" element={<UxDesign />} />
-            <Route path="/webflow" element={<Webflow />} />
-            <Route path="/react" element={<ReactComponent />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" index element={<HomePage />} />
+            <Route path="ux-design" element={<UxDesign />} />
+            <Route path="webflow" element={<Webflow />} />
+            <Route path="react" element={<ReactComponent />} />
+            <Route path="contact" element={<Contact />} />
           </Routes>
           <Footer />
         </div>
