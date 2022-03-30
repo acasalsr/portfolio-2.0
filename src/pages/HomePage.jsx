@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
-import { JobTitleAndDescription } from "../infoContetn/jobTitleAndDescription";
+import { JobTitleAndDescription } from "../infoContent/jobTitleAndDescription";
+
 export default function HomePage() {
   // -> Function job title & keywords<-
   function Job({ job }) {
@@ -14,8 +15,9 @@ export default function HomePage() {
           const [num, text] = singleKeywords.split(".");
           return (
             <h3
-              class="text-color-yellow move-left"
-              style={{ marginRight: `${(index * 10) % 15}0px` }}
+              class="text-color-yellow"
+              //class="text-color-yellow move-left"
+              //style={{ marginRight: `${(index * 10) % 15}0px` }}
             >
               <span className="text-color-blue">{num}.</span> {text}
             </h3>

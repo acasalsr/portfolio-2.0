@@ -6,6 +6,7 @@ import Webflow from "./pages/Webflow";
 import Contact from "./pages/Contact";
 import HomePage from "./pages/HomePage";
 import Layout from "./components/MainMenu";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/react" element={<ReactComponent />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          <Footer />
         </div>
       </BrowserRouter>
     </>
