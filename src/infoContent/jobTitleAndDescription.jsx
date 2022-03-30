@@ -29,7 +29,7 @@ export function JobTitleAndDescription(Job) {
               </p>
               <button
                 type="button"
-                class="text-size-regular button-primary margin-top margin-xlarge shadow"
+                className="text-size-regular button-primary margin-top margin-xlarge shadow"
               >
                 Watch full project
               </button>
@@ -111,7 +111,7 @@ export function JobTitleAndDescription(Job) {
               </p>
               <button
                 type="button"
-                class="text-size-regular button-primary margin-top margin-xlarge shadow"
+                className="text-size-regular button-primary margin-top margin-xlarge shadow"
               >
                 Watch full project
               </button>

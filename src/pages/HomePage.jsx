@@ -59,7 +59,7 @@ export default function HomePage() {
                 type="button"
                 className="text-size-regular button-primary margin-top margin-xlarge shadow"
               >
-                Let's get in touch
+                <a href="#contact">Let's get in touch</a>
               </button>
             </div>
           </div>

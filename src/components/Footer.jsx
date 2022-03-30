@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer>
+    <footer id="contact">
       <div className="blue-line background-color-blue"></div>
       <div className="background-color-yellow-gradient">
         <div className="container-medium flex-left-footer padding-huge">
