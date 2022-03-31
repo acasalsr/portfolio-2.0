@@ -9,7 +9,9 @@ export default function HomePage() {
     return (
       <>
         {spliteTitle.map((singleTitleName) => (
-          <h2 class="header-secondary text-shadow">{singleTitleName}</h2>
+          <h2 class="header-secondary margin-bottom margin-medium text-shadow">
+            {singleTitleName}
+          </h2>
         ))}
         {job.keywords.map((singleKeywords, index) => {
           const [num, text] = singleKeywords.split(".");

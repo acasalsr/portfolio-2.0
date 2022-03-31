@@ -1,6 +1,8 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+
+* {
+  font-family: Montserrat;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -185,7 +187,8 @@ li {
 }
 .header-secondary {
   font-size: 10rem;
-  font-family: Anton;
+  line-height: 1;
+  /*font-family: Anton;*/
   text-align: left;
   text-shadow: inset 1px 1px 1px #000000;
   /* Animation */
@@ -220,9 +223,6 @@ li {
 }
 
 body {
-  font-family: Montserrat, sans-serif;
-  font-size: 1rem;
-  line-height: 1.2;
   background: linear-gradient(
     180deg,
     #2e2e2e 0%,
@@ -235,13 +235,12 @@ body {
 }
 
 h1 {
-  font-family: Anton;
-  letter-spacing: 2px;
+  /*font-family: Anton;*/
   margin-top: 0rem;
   margin-bottom: 0rem;
   font-size: 4rem;
-  line-height: 1.1;
-  font-weight: 700;
+  line-height: 1;
+  font-weight: 800;
 }
 
 h2 {
@@ -275,6 +274,7 @@ span {
 }
 
 p {
+  font-family: Montserrat;
   margin: 0rem;
 }
 
@@ -363,6 +363,7 @@ img {
 }
 
 .button-primary {
+  font-family: Montserrat;
   padding: 0.75rem 3.25rem;
   background-color: #f15bb5;
   color: white;

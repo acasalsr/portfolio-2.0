@@ -29,7 +29,7 @@ export function JobTitleAndDescription(Job) {
               </p>
               <button
                 type="button"
-                className="text-size-regular button-primary margin-top margin-xlarge shadow"
+                class="text-size-regular button-primary margin-top margin-xlarge"
               >
                 Watch full project
               </button>
@@ -40,7 +40,11 @@ export function JobTitleAndDescription(Job) {
 
       {/* image */}
       <div className="xxxlarge">
-        <img className="img-doble-size" src="./img/lines.svg" alt="line" />
+        <img
+          className="img-doble-size"
+          src={process.env.PUBLIC_URL + "/img/lines.svg"}
+          alt="line"
+        />
       </div>
 
       {/* Section 2 */}
@@ -68,7 +72,7 @@ export function JobTitleAndDescription(Job) {
               </p>
               <button
                 type="button"
-                class="text-size-regular button-primary margin-top margin-xlarge shadow"
+                class="text-size-regular button-primary margin-top margin-xlarge"
               >
                 Watch full project
               </button>
@@ -81,7 +85,7 @@ export function JobTitleAndDescription(Job) {
       <div className="xxxlarge">
         <img
           className="img-doble-size-left"
-          src="./img/line-2.svg"
+          src={process.env.PUBLIC_URL + "/img/line-2.svg"}
           alt="line"
         />
       </div>
@@ -111,7 +115,7 @@ export function JobTitleAndDescription(Job) {
               </p>
               <button
                 type="button"
-                className="text-size-regular button-primary margin-top margin-xlarge shadow"
+                class="text-size-regular button-primary margin-top margin-xlarge"
               >
                 Watch full project
               </button>
